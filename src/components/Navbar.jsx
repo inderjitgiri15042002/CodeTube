@@ -1,14 +1,14 @@
 import React from "react";
 import { FiMenu, FiSearch, FiBell, FiUser } from "react-icons/fi";
 
-const Navbar = ({ isActive, setIsActive }) => {
+const Navbar = ({ toggleSidebar }) => {
   return (
     <header className="bg-white shadow-sm">
       <div className="flex items-center justify-between px-4 py-3">
         {/* Left Section */}
         <div className="flex items-center">
           <button
-            onClick={() => setIsActive(!isActive)}
+            onClick={toggleSidebar}
             className="mr-4 text-gray-600 hover:text-gray-900 md:hidden"
           >
             <FiMenu size={24} />

@@ -1,6 +1,6 @@
 /** @format */
 
-export const videos = [
+export const videoData = [
   {
     _id: "W6NZfCO5SIk",
     title: "JavaScript Tutorial for Beginners: Learn JavaScript in 1 Hour",

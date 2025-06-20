@@ -9,7 +9,8 @@ import WatchHistory from "./pages/WatchHistory";
 
 const App = () => {
   return (
-    <div>
+    <>
+      <Home />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/explore" element={<Explore />} />
@@ -18,7 +19,7 @@ const App = () => {
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
       </Routes>
-    </div>
+    </>
   );
 };
 

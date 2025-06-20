@@ -3,7 +3,11 @@ import { createContext, useState } from "react";
 
 export const VideoContext = createContext(null);
 
-export const VideTheme = ({ children }) => {
+export const VideoProvider = ({ children }) => {
   const [videos, setVideos] = useState(videos);
-  return <VideoContext.Provider>{children}</VideoContext.Provider>;
+  return (
+    <VideoContext.Provider value={{ videos, setVideos }}>
+      {children}
+    </VideoContext.Provider>
+  );
 };
